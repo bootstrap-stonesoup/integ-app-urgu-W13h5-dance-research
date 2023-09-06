@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-gcks
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/integration-e2e-tenant/integ-app-urgu/devfile-sample-python-basic-gcks@sha256:568d34195ea2c99a02b10d507e30b57e4789d151a2f77fe46a45e96320a830a2
+        name: my-python
+        resources: {}
+status: {}
